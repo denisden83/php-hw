@@ -26,14 +26,5 @@ foreach ($cars as $make => $specs) {
         echo "$key $value; ";
     }
     echo "<br />\n";
-
 }
-//$arrlength = count($cars);
-//for ($i = 0; $arrlength--; $i++) {
-//    echo $cars[$i] . "<br />\n";
-//
-//    foreach ($cars[$i] as $key=>$value) {
-//        echo $value . " ";
-//    }
-//    echo "<br />\n";
-//}
+
