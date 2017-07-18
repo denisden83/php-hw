@@ -27,4 +27,3 @@ foreach ($cars as $make => $specs) {
     }
     echo "<br />\n";
 }
-

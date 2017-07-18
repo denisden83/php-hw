@@ -1,33 +1,39 @@
 <style>
-    table, th, td {
+    td {
         border: 1px solid black;
         text-align: center;
+        padding: 5px;
     }
-    td {
-
-    }
-    table {
+    table  {
         border-collapse: collapse;
     }
-
 </style>
 <?php
-echo "<table>\n<tr><td></td>";
+echo "<table>\n<tr><th></th>";
 for ($x = 11; --$x;) {
     echo "<th>$x</th>";
 }
-echo "</tr>\n<tr>";
+echo "</tr>\n";
 for ($i = 11; --$i;) {
-    echo "<th>$i</th>";
+    echo "<tr><th>$i</th>";
     for ($j = 11; --$j;) {
-        if ($i % 2 == 0 && $j % 2 == 0) {
+        //=======first
+        if (($i % 2 == 0) && ($j % 2 == 0)) {
             echo "<td>(" . ($i * $j) . ")</td>";
-        } elseif ($i % 2 == 1 && $j % 2 == 1) {
+        } elseif (($i % 2 == 1) && ($j % 2 == 1)) {
             echo "<td>[" . ($i * $j) . "]</td>";
         } else {
             echo "<td>" . ($i * $j) . "</td>";
         }
+        //=====second
+//        if (($i % 2 == 0) && ($j % 2 == 0)) {
+//            echo "<td>(" . ($i * $j) . ")</td>";
+//        } elseif (($i % 2 == 0) xor ($j % 2 == 0)) {
+//            echo "<td>" . ($i * $j) . "</td>";
+//        } else {
+//            echo "<td>[" . ($i * $j) . "]</td>";
+//        }
     }
-    echo ($i != 1) ? "</tr>\n<tr>" : "</tr>\n";
+    echo "</tr>\n";
 }
 echo "</table>";

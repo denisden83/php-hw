@@ -6,4 +6,4 @@ if (defined("GREETING")) {
 }
 echo constant($constant) . " " . "How are you?<br />\n";
 define("GREETING", "Hello!");
-echo GREETING . " Where is 'Hello!'???";
+echo GREETING . " Where is 'Hello!' ???";
