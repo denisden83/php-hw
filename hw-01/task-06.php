@@ -1,23 +1,23 @@
 <?php
 $bmw = [
-    "model"=>"X5",
-    "speed"=>120,
-    "doors"=>5,
-    "year"=>2015
+    'model'=>'X5',
+    'speed'=>120,
+    'doors'=>5,
+    'year'=>2015
 ];
-$toyota['model'] = "RAV4";
+$toyota['model'] = 'RAV4';
 $toyota['speed'] = 220;
 $toyota['doors'] = 5;
 $toyota['year'] = 2017;
 
 $opel = [
-    "model"=>"FOCUS",
-    "speed"=>200,
-    "doors"=>5,
-    "year"=>2014
+    'model'=>'FOCUS',
+    'speed'=>200,
+    'doors'=>5,
+    'year'=>2014
 ];
 
-$cars = ["bmw"=>$bmw, "toyota"=>$toyota, "opel"=>$opel];
+$cars = ['bmw'=>$bmw, 'toyota'=>$toyota, 'opel'=>$opel];
 
 //var_dump($cars);
 foreach ($cars as $make => $specs) {

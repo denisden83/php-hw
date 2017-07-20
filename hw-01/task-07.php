@@ -19,19 +19,19 @@ for ($i = 11; --$i;) {
     for ($j = 11; --$j;) {
         //=======first
         if (($i % 2 == 0) && ($j % 2 == 0)) {
-            echo "<td>(" . ($i * $j) . ")</td>";
+            echo '<td>(' . ($i * $j) . ')</td>';
         } elseif (($i % 2 == 1) && ($j % 2 == 1)) {
-            echo "<td>[" . ($i * $j) . "]</td>";
+            echo '<td>[' . ($i * $j) . ']</td>';
         } else {
-            echo "<td>" . ($i * $j) . "</td>";
+            echo '<td>' . ($i * $j) . '</td>';
         }
         //=====second
 //        if (($i % 2 == 0) && ($j % 2 == 0)) {
-//            echo "<td>(" . ($i * $j) . ")</td>";
+//            echo '<td>(' . ($i * $j) . ')</td>';
 //        } elseif (($i % 2 == 0) xor ($j % 2 == 0)) {
-//            echo "<td>" . ($i * $j) . "</td>";
+//            echo '<td>' . ($i * $j) . '</td>';
 //        } else {
-//            echo "<td>[" . ($i * $j) . "]</td>";
+//            echo '<td>[' . ($i * $j) . ']</td>';
 //        }
     }
     echo "</tr>\n";
