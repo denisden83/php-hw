@@ -24,6 +24,6 @@ echo '<pre>' . var_dump($new_str) . "</pre>\n";
 //    $rev_arr[] = $arr[$len];
 //}
 //echo "<pre>" . var_dump($rev_arr) . "</pre>\n";
-
+//
 //$new_str = implode('#', $rev_arr);
 //echo "<pre>" . var_dump($new_str) . "</pre>\n";
