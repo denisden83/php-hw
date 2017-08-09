@@ -1,0 +1,15 @@
+INSERT INTO burger.clients (name, email, phone) VALUES ('mike', 'mike@mail.ru', '+7 (555) 555 55 55');
+INSERT INTO burger.clients (name, email, phone) VALUES ('john', 'john@mail.ru', '+7 (838) 388 38 38');
+INSERT INTO burger.clients (name, email, phone) VALUES ('foo', 'foo@mail.ru', '+7 (777) 777 77 77');
+INSERT INTO burger.clients (name, email, phone) VALUES ('kurd', 'kurd@mail.ru', '+7 (838) 392 83 92');
+INSERT INTO burger.clients (name, email, phone) VALUES ('burd', 'burd@mail.ru', '+7 (777) 777 77 77');
+INSERT INTO burger.clients (name, email, phone) VALUES ('jane', 'jane@mail.ru', '+7 (222) 222 22 22');
+INSERT INTO burger.clients (name, email, phone) VALUES ('rick', 'rick@mail.ru', '+7 (928) 387 49 24');
+INSERT INTO burger.clients (name, email, phone) VALUES ('bill', 'bill@mail.ru', '+7 (000) 333 33 33');
+INSERT INTO burger.clients (name, email, phone) VALUES ('willi', 'willi@mail.ru', '+7 (987) 658 88 88');
+INSERT INTO burger.clients (name, email, phone) VALUES ('kat', 'kat@mail.ru', '+7 (876) 678 47 55');
+INSERT INTO burger.clients (name, email, phone) VALUES ('fat', 'fat@mail.ru', '+7 (876) 678 47 55');
+INSERT INTO burger.clients (name, email, phone) VALUES ('enrico', 'enrico@mail.ru', '+7 (017) 889 29 10');
+INSERT INTO burger.clients (name, email, phone) VALUES ('len', 'len@mail.ru', '+7 (839) 483 89 39');
+INSERT INTO burger.clients (name, email, phone) VALUES ('ken', 'ken@mail.ru', '+7 (983) 746 73 64');
+INSERT INTO burger.clients (name, email, phone) VALUES ('nike', 'nike@mail.ru', '+7 (993) 939 39 39');

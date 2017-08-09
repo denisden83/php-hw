@@ -9,10 +9,11 @@
 </head>
 <body>
 <a href="?name=godddd">namego</a><br />
-<?php
-echo " Привет как дела?<br />\n<pre>";
-print_r($GLOBALS);
-echo "</pre>";
-?>
+<pre>
+    <?php
+    print_r($GLOBALS);
+    ?>
+</pre>
+
 </body>
 </html>

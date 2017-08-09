@@ -113,7 +113,7 @@ function task4($num1, $num2)
         foreach (generator($num1) as $value) {
             echo "<tr>";
             foreach (generator($num2) as $item) {
-                echo "<td style='border: 5px dashed lime;'>" . $value * $item . "</td>";
+                echo "<td style='border: 5px dashed lime; text-align: center;'>" . $value * $item . "</td>";
             }
             echo "</tr>";
         }
