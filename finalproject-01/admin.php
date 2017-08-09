@@ -31,7 +31,8 @@ try {
         echo "</table>\n";
     } else {
         $query = "SELECT * FROM orders
-                  WHERE client_id = :client_id";
+                  WHERE client_id = :client_id
+                  ORDER BY order_id DESC";
         $result = $pdo->prepare($query);
         $result -> execute(['client_id' => $_GET['client_id']]);
 
