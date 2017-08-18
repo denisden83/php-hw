@@ -25,8 +25,9 @@ function task1($file)
         echo "Comment - $item->Comment\n<br /><br />";
     }
 }
-//######TASK2#####
 
+
+//######TASK2#####
 function task2($arr)
 {
     $fileJson = 'output.json';
@@ -84,6 +85,7 @@ function task2($arr)
 //    echo "</pre>";
 }
 
+
 //######TASK3#####
 function createArr($from, $to, $numOfElemInSubArr, $numOfSubArr)
 {
@@ -127,6 +129,7 @@ function task3($arr)
 //    print_r($dataFinalArr);
 //    echo "</pre>";
 }
+
 
 
 //######TASK4#####
