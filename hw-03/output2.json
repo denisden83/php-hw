@@ -1,0 +1,12 @@
+{
+    "Europe": {
+        "Germany": "Берлин",
+        "France": "Paris",
+        "Spain": "Madrid"
+    },
+    "Asia": {
+        "China": "Пекин",
+        "Thailand": "Bankog",
+        "Nepal": "Kathmandu"
+    }
+}
