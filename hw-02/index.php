@@ -14,7 +14,7 @@ require_once('functions.php');
 //task3('/', 100, 2.5, 2, 2);
 
 #############TASK4
-task4(10, 7);
+//task4(10, 7);
 #############TASK5
 
 #####variant1
@@ -34,6 +34,8 @@ task4(10, 7);
 //$unix_time = strtotime("24.02.2016 00:00:00");
 //echo '<p>24.03.2016 00:00:00 unix format: ' . $unix_time . "</p>\n";
 //echo "24.03.2016 00:00:00 обычный формат " . date("d.m.Y h:i:s", $unix_time);
+$d = strtotime('01.03.1983');
+echo date("Y-m-d", $d);
 
 
 ###########TASK7
