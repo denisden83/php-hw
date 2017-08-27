@@ -129,8 +129,8 @@ if (!isset($_SESSION['id'])) {
                     <label for="login" class="col-sm-2 control-label">Логин</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="login" placeholder="Логин"
-                               value="<?php echo $login; ?>" name="login">
-                        <span style="color: red;"><?php echo $loginErr; ?></span>
+                               value="<?php if (isset($login)) {echo $login;} ?>" name="login">
+                        <span style="color: red;"><?php if (isset($loginErr)) {echo $loginErr;} ?></span>
                     </div>
                 </div>
                 <div class="form-group">
@@ -138,7 +138,7 @@ if (!isset($_SESSION['id'])) {
                     <div class="col-sm-10">
                         <input type="password" class="form-control" id="password" placeholder="Пароль"
                                name="password">
-                        <span style="color: red;"><?php echo $passwordErr; ?></span>
+                        <span style="color: red;"><?php if (isset($passwordErr)) {echo $passwordErr;} ?></span>
                     </div>
                 </div>
                 <div class="form-group">
@@ -146,7 +146,7 @@ if (!isset($_SESSION['id'])) {
                     <div class="col-sm-10">
                         <input type="password" class="form-control" id="password2" placeholder="Пароль"
                                name="password2">
-                        <span style="color: red;"><?php echo $password2Err; ?></span>
+                        <span style="color: red;"><?php if (isset($password2Err)) {echo $password2Err;} ?></span>
                     </div>
                 </div>
                 <div class="form-group">
@@ -320,43 +320,53 @@ if (!isset($_SESSION['id'])) {
                     <label for="login" class="col-sm-2 control-label">Логин</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="login" placeholder="Логин"
-                               value="<?php echo $data['login'] . $_POST['login']; ?>" name="login">
+                               value="<?php if (isset($data['login'])) {echo $data['login'];}
+                                            if (isset($_POST['login'])) {echo $_POST['login'];} ?>"
+                               name="login">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">Имя</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="name" placeholder="Имя"
-                               value="<?php echo $data['name'] . $_POST['name']; ?>" name="name">
+                               value="<?php if (isset($data['name'])) {echo $data['name'];}
+                               if (isset($_POST['name'])) {echo $_POST['name'];} ?>"
+                               name="name">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="age" class="col-sm-2 control-label">Возраст</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="age" placeholder="Возраст"
-                               value="<?php echo $data['age'] . $_POST['age']; ?>" name="age">
-                        <span style="color: red;"><?php echo $ageErr; ?></span>
+                               value="<?php if (isset($data['age'])) {echo $data['age'];}
+                               if (isset($_POST['age'])) {echo $_POST['age'];} ?>"
+                               name="age">
+                        <span style="color: red;"><?php if (isset($ageErr)) {echo $ageErr;} ?></span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="description" class="col-sm-2 control-label">Описание</label>
                     <div class="col-sm-10">
                         <textarea name="description" id="description" cols="43" rows="4"
-                                  class=""><?php echo $data['description'] . $_POST['description']; ?></textarea>
+                                  class=""><?php if (isset($data['description'])) {echo $data['description'];}
+                                                 if (isset($_POST['description'])) {echo $_POST['description'];} ?>
+                        </textarea>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="photo" class="col-sm-2 control-label">Фото</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="photo" placeholder="Фото"
-                               value="<?php echo $data['photo'] . $_POST['photo']; ?>" name="photo">
+                               value="<?php if (isset($data['photo'])) {echo $data['photo'];}
+                               if (isset($_POST['photo'])) {echo $_POST['photo'];} ?>"
+                               name="photo">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="photoUpload" class="col-sm-2 control-label">Загрузить (1MB)</label>
                     <div class="col-sm-10">
                         <input type="file" class="" id="photoUpload" name="photoUpload">
-                        <span style="color: red;"><?php echo $uploadErr ?></span>
+                        <span style="color: red;"><?php if (isset($uploadErr )) {echo $uploadErr;} ?></span>
                     </div>
                 </div>
                 <div class="form-group">

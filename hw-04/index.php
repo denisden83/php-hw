@@ -126,8 +126,9 @@ if (!isset($_SESSION['id'])) {
                 <label for="login" class="col-sm-2 control-label">Логин</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="login" placeholder="Логин"
-                           value="<?php echo $login . $_SESSION['login']; ?>" name="login">
-                    <span style="color: red;"><?php echo $loginErr; ?></span>
+                           value="<?php if (isset($login)) {echo $login;}
+                           if (isset($_SESSION['login'])) {$_SESSION['login'];} ?>" name="login">
+                    <span style="color: red;"><?php if (isset($loginErr)) {echo $loginErr;} ?></span>
                 </div>
             </div>
             <div class="form-group">
@@ -135,7 +136,7 @@ if (!isset($_SESSION['id'])) {
                 <div class="col-sm-10">
                     <input type="password" class="form-control" id="password" placeholder="Пароль"
                            name="password">
-                    <span style="color: red;"><?php echo $passwordErr; ?></span>
+                    <span style="color: red;"><?php if (isset($passwordErr)) {echo $passwordErr;} ?></span>
                 </div>
             </div>
             <div class="form-group">
