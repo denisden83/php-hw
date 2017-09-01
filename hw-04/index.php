@@ -136,7 +136,7 @@ if (!isset($_SESSION['id'])) {
                 <div class="col-sm-10">
                     <input type="password" class="form-control" id="password" placeholder="Пароль"
                            name="password">
-                    <span style="color: red;"><?php if (isset($passwordErr)) {echo $passwordErr;} ?></span>
+                    <span style="color: red;"><?php if(isset($passwordErr))echo $passwordErr; ?></span>
                 </div>
             </div>
             <div class="form-group">
