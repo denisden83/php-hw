@@ -3,9 +3,10 @@ namespace AUTO;
 
 class Niva extends Car
 {
-    
+    /**
+     * @var TransmissionManual
+     */
     public $transmission;
-    public $car;
 
 
     public function __construct($transmission, $enginePower)

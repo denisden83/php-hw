@@ -1,5 +1,5 @@
 <?php
-namespace AUTO;
+//namespace AUTO;
 
 spl_autoload_register(function ($classname) {
     require_once(__DIR__ . "/{$classname}.php");
